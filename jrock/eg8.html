@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<script>
+
+function doSomething()
+{
+let a=document.getElementById('tab');
+let b=document.getElementById('position1');
+a.remove();
+b.appendChild(a);
+}
+
+function putItRightBack()
+{
+let a=document.getElementById('tab');
+let b=document.getElementById('newDiv');
+a.remove();
+b.appendChild(a);
+}
+
+
+</script>
+</head>
+<body>
+<button type='button' onclick='doSomething()'>doSomething</button>
+<button type='button' onclick='putItRightBack()'>put it right back</button>
+
+<div>
+<span id='position1'></span>
+<br>
+<br>
+hello i am a coder
+i love to code 
+<div id='newDiv'>
+<table id='tab' border='1'><tr><td>Salauddin</td><td>Nagori</td></tr></table>
+</div>
+</div>
+</body>
+</html>
